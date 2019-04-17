@@ -118,6 +118,8 @@
 
     /* - - - - COOKIES - - - - */
 
+    // потом допишу
+
     function generateRandomString($length = 20) {
         $characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
         $charactersLength = strlen($characters);
