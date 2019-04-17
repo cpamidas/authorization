@@ -1,0 +1,7 @@
+midas;b0baee9d279d34fa1dfd71aadb908c3f
+anna;3d2172418ce305c7d16d4b05597c6a59
+jumbo;b7bc2a2f5bb6d521e64c8974c143e9a0
+kolya;79b7cdcd14db14e9cb498f1793817d69
+indigo;c5fe25896e49ddfe996db7508cf00534
+diego;ae8b5aa26a3ae31612eec1d1f6ffbce9
+bilder;22a4d9b04fe95c9893b41e2fde83a427
