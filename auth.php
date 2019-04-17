@@ -1,5 +1,7 @@
 <?php
 
+/* - - - - - REGISTRATION - - - - - */
+
 if (!empty($_POST['login']) && !empty($_POST['pass']) && !empty($_POST['pass2'])) {
 
     $login = $_POST['login'];
@@ -25,6 +27,9 @@ if (!empty($_POST['login']) && !empty($_POST['pass']) && !empty($_POST['pass2'])
 
     echo 'Вы заполнили не все поля!';
 }*/
+
+/* - - - - - REGISTRATION - - - - - */
+
 
 /* - - - - COOKIES - - - - */
 
@@ -94,7 +99,7 @@ if (!empty($_REQUEST['login2']) && !empty($_REQUEST['pass_2'])) {
     // если логин не найден, 1 раз вне цикла выводим сообщение
     if($ifLoginExists == false) {
 
-        echo "Пользователь $enteredLogin не зарегистрирован! Пройдите процесс регистрации!";
+        echo "Пользователь <strong style='color:red;'>$enteredLogin</strong> не зарегистрирован! Пройдите процесс регистрации!";
 
     }
 }
