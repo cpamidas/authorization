@@ -21,3 +21,8 @@ h1 {
     width: 200px;
 }
 
+.link {
+    font-weight: 900;
+    color: red;
+}
+
