@@ -76,6 +76,10 @@ if (!empty($_REQUEST['login2']) && !empty($_REQUEST['pass_2'])) {
             // проверка на совпадение пароля
             if($enteredPasswordMd5 == $registrationPassword) {
 
+                session_start();
+
+                var_dump($_SESSION);
+
                 if ($enteredLogin == 'midas') {
 
                     echo '<div class="bingo"><img src="img/midas.jpg" alt="midas" class="width"></div>';
@@ -103,6 +107,4 @@ if (!empty($_REQUEST['login2']) && !empty($_REQUEST['pass_2'])) {
 
     }
 }
-
 /* - - - - - AUTH - - - - - */
-

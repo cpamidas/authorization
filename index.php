@@ -33,17 +33,17 @@
                 <div class="modal-body">
                     <form method="POST">
 
-                      <div class="form-group">
-                        <label for="login">Login</label>
-                        <input type="text" class="form-control" id="login" name="login" aria-describedby="loginHelp" placeholder="Enter login" required>
+                      <div class="form-group" style="text-align: left !important;">
+                        <label for="login">Логин</label>
+                        <input type="text" class="form-control" id="login" name="login" aria-describedby="loginHelp" placeholder="Введите логин" required>
                       </div>
-                      <div class="form-group">
-                        <label for="pass">Password</label>
-                        <input type="password" class="form-control" id="pass" placeholder="Password" name="pass" required>
+                      <div class="form-group" style="text-align: left !important;">
+                        <label for="pass">Пароль</label>
+                        <input type="password" class="form-control" id="pass" placeholder="Введите пароль" name="pass" required>
                       </div>
-                      <div class="form-group">
-                        <label for="pass2">ReEnter your Password</label>
-                        <input type="password" class="form-control" id="pass2" placeholder="Password" name="pass2" required>
+                      <div class="form-group" style="text-align: left !important;">
+                        <label for="pass2">Проверка пароля</label>
+                        <input type="password" class="form-control" id="pass2" placeholder="Повторно введите пароль" name="pass2" required>
                       </div>
 
                        <button type="submit" class="btn btn-primary">РЕГИСТРАЦИЯ</button>
@@ -67,13 +67,18 @@
                 <div class="modal-body">
                     <form method="POST">
 
-                        <div class="form-group">
+                        <div class="form-group" style="text-align: left !important;">
                             <label for="login2">Логин</label>
                             <input type="text" class="form-control" id="login2" name="login2" aria-describedby="loginHelp" placeholder="Введите логин" required>
                         </div>
-                        <div class="form-group">
+                        <div class="form-group" style="text-align: left !important;">
                             <label for="pass_2">Пароль</label>
                             <input type="password" class="form-control" id="pass_2" placeholder="Введите пароль" name="pass_2" required>
+                        </div>
+
+                        <div class="form-check" style="text-align: left !important;">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Запомнить меня</label>
                         </div>
 
                         <button type="submit" class="btn btn-primary">АВТОРИЗИРОВАТЬСЯ</button>
@@ -90,7 +95,7 @@
 <div class="bingo">
     <?php
 
-    require_once 'auth.php'
+    require_once 'auth.php';
 
     ?>
 </div>
