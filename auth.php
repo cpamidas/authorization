@@ -105,7 +105,7 @@ if (!empty($_REQUEST['login2']) && !empty($_REQUEST['pass_2'])) {
 
                 $_SESSION['login'] = $enteredLogin;
 
-                header('Location: http://localhost:8080/authentication/index.php');
+                header('Location: index.php');
 
             } else {
 
@@ -118,7 +118,7 @@ if (!empty($_REQUEST['login2']) && !empty($_REQUEST['pass_2'])) {
     // если логин не найден, 1 раз вне цикла выводим сообщение
     if($ifLoginExists == false) {
 
-        echo "Пользователь <strong style='color:red;'>$enteredLogin</strong> не зарегистрирован! Пройдите процесс регистрации!";
+        echo "Пользователь <strong style='color:red;'>$enteredLogin</strong> не зарегистрирован! Пройдите <a href='registration.php' class='link'>процесс регистрации!</a>";
 
     }
 }

@@ -6,7 +6,7 @@ if (!empty($_SESSION['login'])) {
 
         session_unset();
 
-        header('Location: http://localhost:8080/authentication/index.php');
+        header('Location: index.php');
 
     } else {
 
