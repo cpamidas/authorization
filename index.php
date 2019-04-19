@@ -15,39 +15,43 @@
 
 <body>
 
-    <h1>Добро пожаловать на <?= $_SERVER['SERVER_NAME']; ?>!</h1>
-    <hr>
+    <div class="main2">
 
-    <div class="bingo">
-    <?php session_start(); ?>
+        <h1>Добро пожаловать на <?= $_SERVER['SERVER_NAME']; ?>!</h1>
+        <hr>
 
-    <?php
+        <div class="bingo">
+        <?php session_start(); ?>
 
-    if (!empty($_SESSION['login'])) {
+        <?php
 
-        if ($_SESSION['login'] == 'midas') {
+        if (!empty($_SESSION['login'])) {
 
-            echo '<div class="bingo"><img src="img/midas.jpg" alt="midas" class="width"></div>';
+            if ($_SESSION['login'] == 'midas') {
+
+                echo '<div class="bingo"><img src="img/midas.jpg" alt="midas" class="width"></div>';
+                echo "<br />Здравствуйте, <strong style='color:red;'>" . $_SESSION['login'] . "</strong>, рады вас видеть!" . "<br/><br/>";
+
+                include 'table.php';
+
+            } else {
+
+                echo '<div class="bingo"><img src="img/4.jpg" alt="midas" class="width"></div>';
+                echo "<br />Здравствуйте, <strong style='color:red;'>" . $_SESSION['login'] . "</strong>, рады вас видеть!" . "<br/><br/>";
+            }
+
+            echo '<a href="logout.php"><button type="submit" class="btn btn-success" data-toggle="modal" data-target="#exampleModal">ВЫЙТИ</button></a>';
 
         } else {
 
-            echo '<div class="bingo"><img src="img/4.jpg" alt="midas" class="width"></div>';
-
+            echo '<a href="registration.php"><button class="btn btn-success" data-toggle="modal" data-target="#exampleModal">РЕГИСТРАЦИЯ</button></a>';
+            echo '<a href="auth.php"><button class="btn btn-success" data-toggle="modal" data-target="#authorization">АВТОРИЗАЦИЯ</button></a>';
         }
 
-        echo "Здравствуйте, <strong style='color:red;'>" . $_SESSION['login'] . "</strong>, рады вас видеть!" . "<hr>";
-        echo '<a href="logout.php"><button type="submit" class="btn btn-success" data-toggle="modal" data-target="#exampleModal">ВЫЙТИ</button></a>';
+        ?>
 
-    } else {
-
-        echo '<a href="registration.php"><button class="btn btn-success" data-toggle="modal" data-target="#exampleModal">РЕГИСТРАЦИЯ</button></a>';
-        echo '<a href="auth.php"><button class="btn btn-success" data-toggle="modal" data-target="#authorization">АВТОРИЗАЦИЯ</button></a>';
-
-    }
-
-    ?>
+        </div>
     </div>
-
     <script src="https://code.jquery.com/jquery-3.4.0.min.js" integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>

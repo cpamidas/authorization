@@ -12,6 +12,11 @@ h1 {
     text-align: center !important;
 }
 
+.main2 {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
 .bingo {
     margin: 20px auto;
     text-align: center !important;
@@ -26,3 +31,10 @@ h1 {
     color: red;
 }
 
+.tmaxwidth {
+    text-align: center;
+}
+
+.marg {
+
+}
